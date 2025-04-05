@@ -7,7 +7,7 @@ $keywords = $_POST['keywords'];
 $sql="INSERT INTO gig_intro (title, category, sub_category, keywords) VALUES ('$title', '$category', '$sub_category', '$keywords')";
 $result = mysqli_query($conn, $sql);
 if ($result) {
-    echo "Data inserted successfully";
+    echo "";
 } else {
     echo "Error inserting data: " . mysqli_error($conn)  ;
 }
